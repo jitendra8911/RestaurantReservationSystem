@@ -1,0 +1,73 @@
+
+
+.header
+{
+    box-sizing:border-box;
+    border:1px solid black;
+    height:10em;
+}
+
+.login
+{
+    float: right;
+}
+introduction
+{
+    display:block;
+}
+.description
+{
+    text-align: center;
+}
+.description:after
+{
+    content:".";
+    visibility: hidden;
+    display: block;
+    height: 10em;
+}
+.divReservationDetails,.divEditReservationDetails
+{
+    box-sizing:border-box;
+    text-align:center;
+}
+.TableReservationDetails,.EditReservationDetails
+{
+    float:left;
+    box-sizing:border-box;
+    padding:5px;
+}
+
+
+.divleft,.divright
+{
+    float:left;
+    width:50%;
+
+}
+.divCreateReservation,.divEditReservation
+{
+
+    text-align: center;
+
+    display:block;
+
+}
+
+.divNav:after,section:after,.divReservationDetails:after,.divEditReservationDetails:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.footer
+{
+    position:static;
+    top:500px;
+}
+.divFooter
+{
+    text-align:center;
+
+}

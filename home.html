@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        document.createElement("article");
+    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/home.css">
+    <style>
+        body
+        {
+            background-color: rgba(25, 172, 180, 0.5);
+        }
+    </style>
+    <title>Welcome to our Restaurant</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="divHeader">Indian Restaurant</div>
+</header>
+<nav>
+    <div class="divNav">
+        <a href="login.html" class="login">Login</a>
+        <div></div>
+    </div>
+</nav>
+<section>
+    <introduction class="description">Welcome to our restaurant</introduction>
+</section>
+<section class="sectionReserve">
+    <div class="divleft">
+        <div class="divReservationDetails">
+            <div class="TableReservationDetails">
+                <select>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 Person</option>
+                    <option value="6">6 People</option>
+                    <option value="7">7 People</option>
+                    <option value="8">8 People</option>
+                </select>
+            </div>
+            <div class="TableReservationDetails">
+                <input type="date" />
+            </div>
+            <div class="TableReservationDetails">
+                <input type="time" />
+            </div>
+            <div class="TableReservationDetails">
+                <input type="tel" placeholder="(999)-999-9999" />
+            </div>
+        </div>
+        <div class="divCreateReservation">
+            <input type="button" value="Create Reservation" />
+        </div>
+    </div>
+    <div class="divright">
+        <div class="divEditReservationDetails">
+            <div class="EditReservationDetails">
+                <label for="Confirmation Code">Confirmation Code</label>
+            </div>
+            <div class="EditReservationDetails" id="Confirmation Code">
+                <input type="text"/>
+            </div>
+        </div>
+        <div class="divEditReservation">
+            <input type="button" value="Edit Reservation" />
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="divFooter">2015 © Jitendra Malakalapalli. All Rights Reserved.</div>
+</footer>
+</body>
+
+</html>

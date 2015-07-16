@@ -1,0 +1,19 @@
+.reserve
+{
+    float:left;
+    box-sizing:border-box;
+    padding:5px;
+}
+section {
+    border:1px solid black;
+    margin:5px;margin-bottom:15px;padding:8px;
+
+}
+.divReserve:after
+{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
