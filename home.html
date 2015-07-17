@@ -6,36 +6,46 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script>
-        document.createElement("article");
+        document.createElement("introduction");
     </script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/home.css">
-    <style>
-        body
-        {
-            background-color: rgba(25, 172, 180, 0.5);
-        }
-    </style>
     <title>Welcome to our Restaurant</title>
-</head>
 
+    <!-- adding dynamic tabs -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
 <body>
-<header class="header">
-    <div class="divHeader">Indian Restaurant</div>
-</header>
-<nav>
-    <div class="divNav">
-        <a href="login.html" class="login">Login</a>
-        <div></div>
-    </div>
-</nav>
-<section>
-    <introduction class="description">Welcome to our restaurant</introduction>
-</section>
-<section class="sectionReserve">
-    <div class="divleft">
-        <div class="divReservationDetails">
-            <div class="TableReservationDetails">
+<div class="wrapper">
+    <header class="header">
+        <div class="divHeader">Indian Restaurant</div>
+    </header>
+    <nav>
+        <div class="divNav">
+            <a data-toggle="tab" href="#home" class="menu">Home</a>
+            <a href="login.html" class="menu">Login</a>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- start of tab content -->
+
+    <div class="tab-content">
+
+    <!-- Home page content -->
+        <div id="home" class="tab-pane fade in active">
+    <section >
+        <introduction class="description">Welcome to our restaurant</introduction>
+    </section>
+    <section class="sectionReserve">
+        <div class="divleft">
+            <div class="divReservationDetails">
+            <span class="TableReservationDetails">
                 <select>
                     <option value="1">1 Person</option>
                     <option value="2">2 People</option>
@@ -46,36 +56,126 @@
                     <option value="7">7 People</option>
                     <option value="8">8 People</option>
                 </select>
-            </div>
-            <div class="TableReservationDetails">
+            </span>
+            <span class="TableReservationDetails">
                 <input type="date" />
-            </div>
-            <div class="TableReservationDetails">
+            </span>
+            <span class="TableReservationDetails">
                 <input type="time" />
+            </span>
             </div>
-            <div class="TableReservationDetails">
-                <input type="tel" placeholder="(999)-999-9999" />
+            <div class="divCreateReservation">
+                <a data-toggle="tab" href="#createReservation" class="button">Find a table</a>
             </div>
         </div>
-        <div class="divCreateReservation">
-            <input type="button" value="Create Reservation" />
-        </div>
-    </div>
-    <div class="divright">
-        <div class="divEditReservationDetails">
-            <div class="EditReservationDetails">
+        <div class="divright">
+            <div class="divEditReservationDetails">
+            <span class="EditReservationDetails">
                 <label for="Confirmation Code">Confirmation Code</label>
-            </div>
-            <div class="EditReservationDetails" id="Confirmation Code">
+            </span>
+            <span class="EditReservationDetails" id="Confirmation Code">
                 <input type="text"/>
+            </span>
             </div>
-        </div>
-        <div class="divEditReservation">
-            <input type="button" value="Edit Reservation" />
-        </div>
+            <div class="divEditReservation">
+                <a data-toggle="tab" href="#editReservation" class="button">Edit Reservation</a>
+            </div>
 
+        </div>
+    </section>
+   </div>
+    <!-- end of home page content -->
+
+        <!-- start of Create Reservation content -->
+        <div id="createReservation"  class="tab-pane fade">
+        <section  class="sectionReservation">
+
+            <h1>Reservation</h1>
+            <div class="divReserve">
+                <span class="reserve">
+                    <label for="FirstName">FirstName</label>
+                </span>
+                <span class="reserve" id="FirstName">
+                    <input type="text" />
+                </span>
+            </div>
+
+            <div class="divReserve">
+                <span class="reserve">
+                    <label for="LastName">LastName</label>
+                </span>
+                <span class="reserve" id="LastName">
+                    <input type="text" />
+                </span>
+            </div>
+
+
+            <div class="divReserve">
+                <span class="reserve">
+                    <label for="Telephone">Telephone</label>
+                </span>
+                <span class="reserve" id="Telephone">
+                    <input type="tel" />
+                </span>
+            </div>
+
+
+            <div class="divReserve">
+                <div class="reserve">
+                    <input type="button" value="Reserve" />
+                </div>
+            </div>
+        </section>
+       </div>
+
+        <!-- end of Create Reservation Content -->
+
+        <!-- start of Edit Reservation Content -->
+        <div id="editReservation" class="tab-pane fade">
+
+            <section class="sectionReservation">
+                <h1>Edit</h1>
+                <div class="divEdit">
+                    <span class="reserve">
+                        <select>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 Person</option>
+                            <option value="6">6 People</option>
+                            <option value="7">7 People</option>
+                            <option value="8">8 People</option>
+                        </select>
+                    </span>
+                    <span class="reserve">
+                        <input type="date" />
+                    </span>
+                    <span class="reserve">
+                        <input type="time" />
+                    </span>
+                    <span class="reserve">
+                        <input type="tel" placeholder="(999)-999-9999" />
+                    </span>
+                </div>
+                <div>
+                    <input type="button" value="Update Reservation" />
+                </div>
+            </section>
+
+            <section  class="sectionReservation">
+                <h1>Cancel Reservation</h1>
+                <p>If you want to canel the reservation, please click cancel below. Once canceled, the reservation cannot be undone.</p>
+                <div>
+                    <input type="button" value="Cancel Reservation" />
+                </div>
+            </section>
+
+        </div>
+        <!-- end of Edit Reservation Content -->
     </div>
-</section>
+    <div class="push"></div>
+</div>
 <footer class="footer">
     <div class="divFooter">2015 © Jitendra Malakalapalli. All Rights Reserved.</div>
 </footer>

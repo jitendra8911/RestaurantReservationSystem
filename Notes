@@ -1,3 +1,5 @@
 7/15/2015 : 11:09 AM:  Creating home.html and home.css
 Adding HTML5 new elements: header,section,footer,nav, new elements
 Added "introduction" a new element
+
+7/16/2015: 2:43 AM:  Created different pages for different functionalities. But later again changed them back to "tabs" provided by Bootstrap
