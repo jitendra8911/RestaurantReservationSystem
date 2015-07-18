@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        document.createElement("introduction");
+    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/ownerHome.css">
+    <title>Welcome to Indian Restaurant</title>
+
+    <!-- adding dynamic tabs -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="divHeader">Indian Restaurant</div>
+    </header>
+    <nav>
+        <div class="divNav">
+            <a data-toggle="tab" href="#home" class="menu">Home</a>
+            <a data-toggle="tab" href="#viewReservation" class="menu">View Reservation</a>
+            <a data-toggle="tab" href="#viewSeatingArea" class="menu">View Seating Area</a>
+            <a data-toggle="tab" href="#profile" class="menu">Profile</a>
+            <a data-toggle="tab" href="#settings" class="menu">Settings</a>
+            <a data-toggle="tab" href="#viewContactList" class="menu">View Contacts</a>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- start of tab content -->
+
+    <div class="tab-content">
+
+        <!-- Home page content -->
+        <div id="home" class="tab-pane fade in active">
+            <section >
+                <introduction class="description">Welcome to our restaurant</introduction>
+            </section>
+            <section class="sectionReserve">
+                <div class="divleft">
+                    <div class="divReservationDetails">
+            <span class="TableReservationDetails">
+                <select>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 Person</option>
+                    <option value="6">6 People</option>
+                    <option value="7">7 People</option>
+                    <option value="8">8 People</option>
+                </select>
+            </span>
+            <span class="TableReservationDetails">
+                <input type="date" />
+            </span>
+            <span class="TableReservationDetails">
+                <input type="time" />
+            </span>
+                    </div>
+                    <div class="divCreateReservation">
+                        <a data-toggle="tab" href="#createReservation" class="button">Find a table</a>
+                    </div>
+                </div>
+                <div class="divright">
+                    <div class="divEditReservationDetails">
+            <span class="EditReservationDetails">
+                <label for="Confirmation Code">Confirmation Code</label>
+            </span>
+            <span class="EditReservationDetails" id="Confirmation Code">
+                <input type="text"/>
+            </span>
+                    </div>
+                    <div class="divEditReservation">
+                        <a data-toggle="tab" href="#editReservation" class="button">Edit Reservation</a>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <!-- end of home page content -->
+
+        <!-- start of Create Reservation content -->
+        <div id="createReservation"  class="tab-pane fade">
+            <section  class="sectionReservation">
+
+                <h1>Reservation</h1>
+                <div class="divReserve">
+                <span class="reserve">
+                    <label for="FirstName">FirstName</label>
+                </span>
+                <span class="reserve" id="FirstName">
+                    <input type="text" />
+                </span>
+                </div>
+
+                <div class="divReserve">
+                <span class="reserve">
+                    <label for="LastName">LastName</label>
+                </span>
+                <span class="reserve" id="LastName">
+                    <input type="text" />
+                </span>
+                </div>
+
+
+                <div class="divReserve">
+                <span class="reserve">
+                    <label for="Telephone">Telephone</label>
+                </span>
+                <span class="reserve" id="Telephone">
+                    <input type="tel" />
+                </span>
+                </div>
+
+
+                <div class="divReserve">
+                    <div class="reserve">
+                        <input type="button" value="Reserve" />
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- end of Create Reservation Content -->
+
+        <!-- start of Edit Reservation Content -->
+        <div id="editReservation" class="tab-pane fade">
+
+            <section class="sectionReservation">
+                <h1>Edit</h1>
+                <div class="divEdit">
+                    <span class="reserve">
+                        <select>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 Person</option>
+                            <option value="6">6 People</option>
+                            <option value="7">7 People</option>
+                            <option value="8">8 People</option>
+                        </select>
+                    </span>
+                    <span class="reserve">
+                        <input type="date" />
+                    </span>
+                    <span class="reserve">
+                        <input type="time" />
+                    </span>
+                    <span class="reserve">
+                        <input type="tel" placeholder="(999)-999-9999" />
+                    </span>
+                </div>
+                <div>
+                    <input type="button" value="Update Reservation" />
+                </div>
+            </section>
+
+            <section  class="sectionReservation">
+                <h1>Cancel Reservation</h1>
+                <p>If you want to canel the reservation, please click cancel below. Once canceled, the reservation cannot be undone.</p>
+                <div>
+                    <input type="button" value="Cancel Reservation" />
+                </div>
+            </section>
+
+        </div>
+        <!-- end of Edit Reservation Content -->
+
+        <!-- start of View Reservations content -->
+        <div id="viewReservation"  class="tab-pane fade">
+
+            <section class="sectionViewReservation">
+                <h1>Reservations</h1>
+
+                <table class="tblReservations" align="center">
+                    <thead>
+                    <tr>
+                        <th>Conf#</th>
+                        <th>Name</th>
+                        <th>Table #</th>
+                        <th>size</th>
+                        <th>Info</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>A123</td>
+                        <td>Jitendra Malakalapalli</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>  <input type="button" value="View"/> </td>
+                    </tr>
+                    <tr>
+                        <td>A152</td>
+                        <td>Jitendra Malakalapalli</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td> <input type="button" value="View"/> </td>
+                    </tr>
+                    <tr>
+                        <td>A252</td>
+                        <td>Jitendra Malakalapalli</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td> <input type="button" value="View"/> </td>
+                    </tr>
+                    <tr>
+                        <td>E216</td>
+                        <td>Jitendra Malakalapalli</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>  <input type="button" value="View"/> </td>
+                    </tr>
+                    <tr>
+                        <td>A153</td>
+                        <td>Jitendra Malakalapalli</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td> <input type="button" value="View"/> </td>
+                    </tr>
+                </table>
+
+            </section>
+
+            </div>
+
+        <!-- end of View Reservations content -->
+
+        <!-- start of view Seating Area -->
+        <div id="viewSeatingArea"  class="tab-pane fade">
+
+            <section class="sectionSeatingArea">
+                <h1>Seating Area</h1>
+
+                <table class="tblViewSeating" align="center">
+                    <thead>
+                    <tr>
+                        <th>Table#</th>
+                        <th>Size</th>
+                        <th>Status</th>
+                        <th>Since</th>
+                        <th>Conf#</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>Occupied</td>
+                        <td>12:00PM</td>
+                        <td><a href="">A123</a> </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>Available</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>Occupied</td>
+                        <td>1:30PM</td>
+                        <td><a href="">B543</a> </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>Occupied</td>
+                        <td>2:30PM</td>
+                        <td><a href="">B243</a> </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>Available</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+
+            </section>
+
+        </div>
+        <!-- end of seating area -->
+
+        <!-- start of Profile Content -->
+        <div  id="profile"  class="tab-pane fade">
+            <section class="sectionProfile">
+                <h1>Profile</h1>
+                <div class="divProfile">
+                    <span class="spanProfile">
+                        <label for="ProfileFirstName">FirstName</label>
+                    </span>
+                    <span class="spanProfile" id="ProfileFirstName">
+                        <input type="text" />
+                    </span>
+                </div>
+
+                <div class="divProfile">
+                    <span class="spanProfile">
+                        <label for="ProfileLastName">LastName</label>
+                    </span>
+                    <span class="spanProfile" id="ProfileLastName">
+                        <input type="text" />
+                    </span>
+                </div>
+
+                <div class="divProfile">
+                    <span class="spanProfile">
+                        <label for="ProfileTelephone">Telephone</label>
+                    </span>
+                    <span class="spanProfile" id="ProfileTelephone">
+                        <input type="tel" />
+                    </span>
+                </div>
+
+                <div class="divProfile">
+                    <span class="spanProfile">
+                        <label for="ProfileEmail">Email</label>
+                    </span>
+                    <span class="spanProfile" id="ProfileEmail">
+                        <input type="email" />
+                    </span>
+                </div>
+
+
+
+                <div class="divProfile">
+                    <span class="spanProfile">
+                        <input type="button" value="Update" />
+                    </span>
+                </div>
+            </section>
+
+        </div>
+        <!-- End of Profile Content -->
+
+
+        <!-- Start of Settings Content -->
+        <div  id="settings"  class="tab-pane fade">
+        <section class="sectionSettings">
+
+            <h1>Settings</h1>
+            <table class="tblSettings">
+                <tr>
+                <td><label >Auto Assign</label></td>
+                <td><input type="radio" name="autoAssign" value="Yes">Yes
+                <input type="radio" name="autoAssign" value="No">No</td>
+                </tr>
+                <tr>
+                    <td> <label for="restaurantOpenTimings">Restaurant Open Timings</label></td>
+                    <td> <input type="time" id="restaurantOpenTimings"/></td>
+                </tr>
+                <tr>
+                    <td> <label for="restaurantCloseTimings">Restaurant Closing Timings</label></td>
+                    <td> <input type="time" id="restaurantCloseTimings"/></td>
+                </tr>
+                <tr>
+                    <td> <label>Restaurant Open Days</label> </td>
+                    <td>
+                    <input type="checkbox" name="day" value="Sunday">Sunday
+                    <input type="checkbox" name="day" value="Monday" checked>Monday
+                    <input type="checkbox" name="day" value="Tuesday">Tuesday
+                    <input type="checkbox" name="day" value="Wednesday" >Wednesday
+                    <input type="checkbox" name="day" value="Thursday">Thursday
+                    <input type="checkbox" name="day" value="Friday" >Friday
+                    <input type="checkbox" name="day" value="Saturday">Saturday
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label>Restaurant Closing Days</label> </td>
+                     <td>   <input type="checkbox" name="day" value="Sunday" checked>Sunday
+                        <input type="checkbox" name="day" value="Monday" >Monday
+                        <input type="checkbox" name="day" value="Tuesday">Tuesday
+                        <input type="checkbox" name="day" value="Wednesday" >Wednesday
+                        <input type="checkbox" name="day" value="Thursday">Thursday
+                        <input type="checkbox" name="day" value="Friday" >Friday
+                        <input type="checkbox" name="day" value="Saturday">Saturday
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        </div>
+
+        <!-- End of Settings Content -->
+
+        <!-- Start of View Contacts Content -->
+        <div id="viewContactList"  class="tab-pane fade">
+
+            <section class="sectionViewContactList">
+                <h1>Contacts</h1>
+
+                <table class="tblContactList" align="center">
+                    <thead>
+                    <tr>
+                        <th>Contact#</th>
+                        <th>Phone</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Past Reservations</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>9182878750</td>
+                        <td>Jitendra</td>
+                        <td>Malakalapalli</td>
+                        <td>  <input type="button" value="View"/> </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>9182878751</td>
+                        <td>Stephen</td>
+                        <td>Flemming</td>
+                        <td>  <input type="button" value="View"/> </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>9185878751</td>
+                        <td>Paul</td>
+                        <td>Collingwood</td>
+                        <td>  <input type="button" value="View"/> </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>9186878751</td>
+                        <td>Shane</td>
+                        <td>Warne</td>
+                        <td>  <input type="button" value="View"/> </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>9186878756</td>
+                        <td>Michael</td>
+                        <td>Holding</td>
+                        <td>  <input type="button" value="View"/> </td>
+                    </tr>
+                </table>
+
+            </section>
+
+        </div>
+
+
+        <!-- End of View Contacts Content -->
+    </div>
+    <div class="push"></div>
+</div>
+<footer class="footer">
+    <div class="divFooter">2015 © Jitendra Malakalapalli. All Rights Reserved.</div>
+</footer>
+
+</body>
+</html>

@@ -35,3 +35,22 @@ bower_components/
 *.css.map
 build/
 dist/
+
+# Some html pages
+######################
+assignTable.html
+changeTable.html
+createReservation.html
+editReservation.html
+login.html
+profileAndSettings.html
+Sample.html
+viewReservation.html
+viewSeatingsArea.html
+
+# Some css files
+######################
+createReservation.css
+editReservation.css
+login.css
+viewReservation.css

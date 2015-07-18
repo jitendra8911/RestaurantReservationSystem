@@ -3,3 +3,12 @@ Adding HTML5 new elements: header,section,footer,nav, new elements
 Added "introduction" a new element
 
 7/16/2015: 2:43 AM:  Created different pages for different functionalities. But later again changed them back to "tabs" provided by Bootstrap
+
+7/17/2015: 8:10 AM: yet to add tabs for owner pages, and do some styling to all the pages .
+
+used child sibling selector in ownerHome.css
+example: table th,td
+
+7/17/2015: 10:22 PM Update:
+Assign table and Change Table UI are yet to be implemented. Except these two remaining are designed roughly.
+Proper styling, media queries,bootstrap,browser independency are yet to be implemented. Also background image and background color are to be implemented.

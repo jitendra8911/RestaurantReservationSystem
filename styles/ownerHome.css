@@ -1,0 +1,30 @@
+.sectionViewReservation,.sectionSeatingArea,.sectionSettings,.sectionViewContactList {
+
+    margin:5px;margin-bottom:15px;padding:8px;
+    text-align: center;
+
+}
+.tblReservations,.tblViewSeating,.tblSettings,.tblContactList
+{
+    border:1px solid black;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    width:100%;
+}
+table th
+{
+    text-align: center;
+    padding: 5px;
+}
+table td
+{
+    text-align: center;
+    padding: 5px;
+}
+
+.divTblViewReservations
+{
+    text-align: center;
+}

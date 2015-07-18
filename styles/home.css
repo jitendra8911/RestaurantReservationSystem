@@ -99,22 +99,28 @@ a.button {
 
 }
 
-.divNav:after,section:after,.divReservationDetails:after,.divEditReservationDetails:after,.divReserve:after{
+.divNav:after,section:after,.divReservationDetails:after,.divEditReservationDetails:afterr{
     content: ".";
     visibility: hidden;
     display: block;
     height: 0;
     clear: both;
 }
+.divReserve:after,.divProfile:after
+{
+    content:".";
+    visibility: hidden;
+    display: block;
+}
 
-.sectionReservation
+.sectionReservation,.sectionProfile
 {
     text-align: center;
     border:1px solid black;
     margin:5px;margin-bottom:15px;padding:8px;
 }
 
-.reserve
+.reserve,.spanProfile
 {
     box-sizing:border-box;
     padding:5px;
