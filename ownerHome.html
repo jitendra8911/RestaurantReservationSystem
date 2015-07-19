@@ -8,9 +8,8 @@
         document.createElement("introduction");
     </script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/ownerHome.css">
-    <title>Welcome to Indian Restaurant</title>
+
+    <title>Welcome to Jitendra's Restaurant</title>
 
     <!-- adding dynamic tabs -->
 
@@ -18,21 +17,27 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/ownerHome.css">
+    <script src="scripts/main.js"></script>
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
-        <div class="divHeader">Indian Restaurant</div>
+        <div class="divHeader">Jitendra Indian Restaurant</div>
     </header>
-    <nav>
+    <nav class="navbar navbar-default">
+        <div class="container">
         <div class="divNav">
-            <a data-toggle="tab" href="#home" class="menu">Home</a>
-            <a data-toggle="tab" href="#viewReservation" class="menu">View Reservation</a>
-            <a data-toggle="tab" href="#viewSeatingArea" class="menu">View Seating Area</a>
-            <a data-toggle="tab" href="#profile" class="menu">Profile</a>
-            <a data-toggle="tab" href="#settings" class="menu">Settings</a>
-            <a data-toggle="tab" href="#viewContactList" class="menu">View Contacts</a>
-            <div></div>
+            <ul class="nav navbar-nav">
+                <li id="liHome" class="active">  <a data-toggle="tab" href="#home" class="menu">Home</a> </li>
+          <li>  <a data-toggle="tab" href="#viewReservation" class="menu">View Reservation</a> </li>
+          <li>  <a data-toggle="tab" href="#viewSeatingArea" class="menu">View Seating Area</a> </li>
+          <li> <a data-toggle="tab" href="#profile" class="menu">Profile</a> </li>
+           <li><a data-toggle="tab" href="#settings" class="menu">Settings</a></li>
+          <li><a data-toggle="tab" href="#viewContactList" class="menu">View Contacts</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -43,7 +48,11 @@
         <!-- Home page content -->
         <div id="home" class="tab-pane fade in active">
             <section >
-                <introduction class="description">Welcome to our restaurant</introduction>
+                <introduction class="description"><h1>Welcome to Jitendra's restaurant</h1> <br>
+                Open Hours    : 11:00 AM to 3:00 PM and 5:00 PM to 11:00PM <br>
+                Closing Hours : 2:00 PM to 5:00 PM <br>
+                Closing Days  : We are closed on Wednesday's
+                </introduction>
             </section>
             <section class="sectionReserve">
                 <div class="divleft">
@@ -68,7 +77,7 @@
             </span>
                     </div>
                     <div class="divCreateReservation">
-                        <a data-toggle="tab" href="#createReservation" class="button">Find a table</a>
+                        <a data-toggle="tab" href="#createReservation" class="button" onclick="onReserveClick()">Find a table</a>
                     </div>
                 </div>
                 <div class="divright">
@@ -81,7 +90,7 @@
             </span>
                     </div>
                     <div class="divEditReservation">
-                        <a data-toggle="tab" href="#editReservation" class="button">Edit Reservation</a>
+                        <a data-toggle="tab" href="#editReservation" class="button" onclick="onEditReservationClick()">Edit Reservation</a>
                     </div>
 
                 </div>
@@ -125,7 +134,7 @@
 
                 <div class="divReserve">
                     <div class="reserve">
-                        <input type="button" value="Reserve" />
+                        <input type="button" value="Reserve" class="button"/>
                     </div>
                 </div>
             </section>
@@ -162,7 +171,7 @@
                     </span>
                 </div>
                 <div>
-                    <input type="button" value="Update Reservation" />
+                    <input type="button" value="Update Reservation" class="button" />
                 </div>
             </section>
 
@@ -170,7 +179,7 @@
                 <h1>Cancel Reservation</h1>
                 <p>If you want to canel the reservation, please click cancel below. Once canceled, the reservation cannot be undone.</p>
                 <div>
-                    <input type="button" value="Cancel Reservation" />
+                    <input type="button" value="Cancel Reservation" class="button"/>
                 </div>
             </section>
 
@@ -183,7 +192,7 @@
             <section class="sectionViewReservation">
                 <h1>Reservations</h1>
 
-                <table class="tblReservations" align="center">
+                <table class="tblReservations tblGeneral" align="center">
                     <thead>
                     <tr>
                         <th>Conf#</th>
@@ -198,35 +207,35 @@
                         <td>Jitendra Malakalapalli</td>
                         <td>3</td>
                         <td>3</td>
-                        <td>  <input type="button" value="View"/> </td>
+                        <td>  <input type="button" value="View" class="button"/> </td>
                     </tr>
                     <tr>
                         <td>A152</td>
                         <td>Jitendra Malakalapalli</td>
                         <td>6</td>
                         <td>8</td>
-                        <td> <input type="button" value="View"/> </td>
+                        <td> <input type="button" value="View" class="button"/> </td>
                     </tr>
                     <tr>
                         <td>A252</td>
                         <td>Jitendra Malakalapalli</td>
                         <td>10</td>
                         <td>10</td>
-                        <td> <input type="button" value="View"/> </td>
+                        <td> <input type="button" value="View" class="button"/> </td>
                     </tr>
                     <tr>
                         <td>E216</td>
                         <td>Jitendra Malakalapalli</td>
                         <td>12</td>
                         <td>12</td>
-                        <td>  <input type="button" value="View"/> </td>
+                        <td>  <input type="button" value="View" class="button"/> </td>
                     </tr>
                     <tr>
                         <td>A153</td>
                         <td>Jitendra Malakalapalli</td>
                         <td>2</td>
                         <td>2</td>
-                        <td> <input type="button" value="View"/> </td>
+                        <td> <input type="button" value="View" class="button"> </td>
                     </tr>
                 </table>
 
@@ -242,7 +251,7 @@
             <section class="sectionSeatingArea">
                 <h1>Seating Area</h1>
 
-                <table class="tblViewSeating" align="center">
+                <table class="tblViewSeating tblGeneral" align="center">
                     <thead>
                     <tr>
                         <th>Table#</th>
@@ -338,7 +347,7 @@
 
                 <div class="divProfile">
                     <span class="spanProfile">
-                        <input type="button" value="Update" />
+                        <input type="button" value="Update" class="button" />
                     </span>
                 </div>
             </section>
@@ -402,7 +411,7 @@
             <section class="sectionViewContactList">
                 <h1>Contacts</h1>
 
-                <table class="tblContactList" align="center">
+                <table class="tblContactList tblGeneral" align="center">
                     <thead>
                     <tr>
                         <th>Contact#</th>
@@ -417,35 +426,35 @@
                         <td>9182878750</td>
                         <td>Jitendra</td>
                         <td>Malakalapalli</td>
-                        <td>  <input type="button" value="View"/> </td>
+                        <td>  <input type="button" value="View" class="button"/> </td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>9182878751</td>
                         <td>Stephen</td>
                         <td>Flemming</td>
-                        <td>  <input type="button" value="View"/> </td>
+                        <td>  <input type="button" value="View" class="button"/> </td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>9185878751</td>
                         <td>Paul</td>
                         <td>Collingwood</td>
-                        <td>  <input type="button" value="View"/> </td>
+                        <td>  <input type="button" value="View" class="button"/> </td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>9186878751</td>
                         <td>Shane</td>
                         <td>Warne</td>
-                        <td>  <input type="button" value="View"/> </td>
+                        <td>  <input type="button" value="View" class="button"/> </td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>9186878756</td>
                         <td>Michael</td>
                         <td>Holding</td>
-                        <td>  <input type="button" value="View"/> </td>
+                        <td>  <input type="button" value="View" class="button"/> </td>
                     </tr>
                 </table>
 

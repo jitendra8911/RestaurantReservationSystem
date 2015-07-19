@@ -12,3 +12,13 @@ example: table th,td
 7/17/2015: 10:22 PM Update:
 Assign table and Change Table UI are yet to be implemented. Except these two remaining are designed roughly.
 Proper styling, media queries,bootstrap,browser independency are yet to be implemented. Also background image and background color are to be implemented.
+
+7/18/2015 : 8:14 PM update
+Update menu. Applied menu stylings using ul li and anchor tag along with bootstrap
+
+12:00 AM update
+
+Just completed Design for labels, buttons and table background. Yet to do Login modal popup, media queries, bootstrap, browser dependency, adding button in Settings, formatting input elements in Profile,
+Adding "assign table" and "change table" UI's
+
+

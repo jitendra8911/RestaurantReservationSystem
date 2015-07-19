@@ -1,0 +1,23 @@
+
+Fonts
+font-family
+p{font-family: "Open Sans", Arial, sans-serif;}
+
+
+font-size
+p{font-size: 15px; /*absolute pixel size*/}
+p{font-size: 120%; /*relative to its parent*/}
+p{font-size: 1.2em; /*em: relative to the font-size on parent*/}
+p{font-size: 1.2rem; /*rem: relative to the font-size on html; the root*/}
+
+
+font-style
+p.normal {font-style:normal;}
+p.italic {font-style:italic;}
+p.oblique {font-style:oblique;}
+
+
+font-weight: can use 100-900 or text values like 'bold', 'bolder', 'lighter'. 400=normal, 700=bold
+p.normal {font-weight:normal;}
+p.thick {font-weight:bold;}
+p.thicker {font-weight:900;}

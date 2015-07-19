@@ -9,8 +9,7 @@
         document.createElement("introduction");
     </script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/home.css">
-    <title>Welcome to Indian Restaurant</title>
+    <title>Welcome to Jitendra's Restaurant</title>
 
     <!-- adding dynamic tabs -->
 
@@ -18,18 +17,22 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
         <div class="divHeader">Indian Restaurant</div>
     </header>
-    <nav>
+    <nav class="navbar navbar-default">
+        <div class="container">
         <div class="divNav">
-            <a data-toggle="tab" href="#home" class="menu">Home</a>
-            <a href="login.html" class="menu">Login</a>
-            <div></div>
+            <ul class="nav navbar-nav">
+                <li id="liHome" class="active">  <a data-toggle="tab" href="#home" class="menu">Home</a> </li>
+          <li><a href="login.html" class="menu">Login</a> </li>
+            </ul>
+            </div>
         </div>
     </nav>
 
@@ -40,7 +43,11 @@
     <!-- Home page content -->
         <div id="home" class="tab-pane fade in active">
     <section >
-        <introduction class="description">Welcome to our restaurant</introduction>
+        <introduction class="description"><h1>Welcome to Jitendra's restaurant</h1> <br>
+            Open Hours    : 11:00 AM to 3:00 PM and 5:00 PM to 11:00PM <br>
+            Closing Hours : 2:00 PM to 5:00 PM <br>
+            Closing Days  : We are closed on Wednesday's
+        </introduction>
     </section>
     <section class="sectionReserve">
         <div class="divleft">
@@ -65,7 +72,7 @@
             </span>
             </div>
             <div class="divCreateReservation">
-                <a data-toggle="tab" href="#createReservation" class="button">Find a table</a>
+                <a data-toggle="tab" href="#createReservation" class="button" onclick="onReserveClick()">Find a table</a>
             </div>
         </div>
         <div class="divright">
@@ -78,7 +85,7 @@
             </span>
             </div>
             <div class="divEditReservation">
-                <a data-toggle="tab" href="#editReservation" class="button">Edit Reservation</a>
+                <a data-toggle="tab" href="#editReservation" class="button" onclick="onEditReservationClick()">Edit Reservation</a>
             </div>
 
         </div>
