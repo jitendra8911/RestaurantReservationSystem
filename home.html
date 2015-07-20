@@ -2,22 +2,14 @@
 <html lang="en">
 
 <head>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
+    <meta charset="UTF-8">
+    <title>Welcome to Jitendra's Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         document.createElement("introduction");
     </script>
-    <meta charset="UTF-8">
-    <title>Welcome to Jitendra's Restaurant</title>
-
-    <!-- adding dynamic tabs -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
@@ -65,10 +57,10 @@
                 </select>
             </span>
             <span class="TableReservationDetails">
-                <input type="date"/>
+                <input type="date" class="dateInputField" value="mm/dd/yy"/>
             </span>
             <span class="TableReservationDetails">
-                <input type="time"/>
+                <input type="time" value="--:-- AM/PM"/>
             </span>
                     </div>
                     <div class="divCreateReservation">
@@ -82,7 +74,7 @@
                 <label for="Confirmation Code">Confirmation Code</label>
             </span>
             <span class="EditReservationDetails" id="Confirmation Code">
-                <input type="text"/>
+                <input type="text" class="textInputField"/>
             </span>
                     </div>
                     <div class="divEditReservation">
@@ -102,36 +94,36 @@
                 <h1>Reservation</h1>
 
                 <div class="divReserve">
-                <span class="reserve">
+                <span class="createReservationFields">
                     <label for="FirstName">FirstName</label>
                 </span>
-                <span class="reserve" id="FirstName">
+                <span class="createReservationFields" id="FirstName">
                     <input type="text"/>
                 </span>
                 </div>
 
                 <div class="divReserve">
-                <span class="reserve">
+                <span class="createReservationFields">
                     <label for="LastName">LastName</label>
                 </span>
-                <span class="reserve" id="LastName">
+                <span class="createReservationFields" id="LastName">
                     <input type="text"/>
                 </span>
                 </div>
 
 
                 <div class="divReserve">
-                <span class="reserve">
+                <span class="createReservationFields">
                     <label for="Telephone">Telephone</label>
                 </span>
-                <span class="reserve" id="Telephone">
+                <span class="createReservationFields" id="Telephone">
                     <input type="tel"/>
                 </span>
                 </div>
 
 
                 <div class="divReserve">
-                    <div class="reserve">
+                    <div class="createReservationFields">
                         <input type="button" value="Reserve" class="button"/>
                     </div>
                 </div>
@@ -147,7 +139,7 @@
                 <h1>Edit</h1>
 
                 <div class="divEdit">
-                    <span class="reserve">
+                    <span class="editReservationInputFields">
                         <select>
                             <option value="1">1 Person</option>
                             <option value="2">2 People</option>
@@ -159,13 +151,13 @@
                             <option value="8">8 People</option>
                         </select>
                     </span>
-                    <span class="reserve">
+                    <span class="editReservationInputFields">
                         <input type="date"/>
                     </span>
-                    <span class="reserve">
+                    <span class="editReservationInputFields">
                         <input type="time"/>
                     </span>
-                    <span class="reserve">
+                    <span class="editReservationInputFields">
                         <input type="tel" placeholder="(999)-999-9999"/>
                     </span>
                 </div>
@@ -231,6 +223,16 @@
 <footer class="footer">
     <div class="divFooter">2015 © Jitendra Malakalapalli. All Rights Reserved.</div>
 </footer>
+
+
+<!-- start of script tags -->
+<!--[if lt IE 9]>
+<script src="scripts/html5shiv.js"></script>
+<![endif]-->
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/main.js"></script>
+<!-- end of script tags -->
 </body>
 
 </html>
