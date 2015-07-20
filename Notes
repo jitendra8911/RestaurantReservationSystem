@@ -22,3 +22,10 @@ Just completed Design for labels, buttons and table background. Yet to do Login 
 Adding "assign table" and "change table" UI's
 
 
+@media (min-width: 768px) {
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+}

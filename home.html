@@ -23,15 +23,15 @@
 <body>
 <div class="wrapper">
     <header class="header">
-        <div class="divHeader">Indian Restaurant</div>
+        <div class="divHeader">Jitendra's Restaurant</div>
     </header>
     <nav class="navbar navbar-default">
         <div class="container">
-        <div class="divNav">
-            <ul class="nav navbar-nav">
-                <li id="liHome" class="active">  <a data-toggle="tab" href="#home" class="menu">Home</a> </li>
-          <li><a href="login.html" class="menu">Login</a> </li>
-            </ul>
+            <div class="divNav">
+                <ul class="nav navbar-nav">
+                    <li id="liHome" class="active"><a data-toggle="tab" href="#home" class="menu">Home</a></li>
+                    <li><a data-toggle="tab" href="#login" class="menu">Login</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -40,18 +40,18 @@
 
     <div class="tab-content">
 
-    <!-- Home page content -->
+        <!-- Home page content -->
         <div id="home" class="tab-pane fade in active">
-    <section >
-        <introduction class="description"><h1>Welcome to Jitendra's restaurant</h1> <br>
-            Open Hours    : 11:00 AM to 3:00 PM and 5:00 PM to 11:00PM <br>
-            Closing Hours : 2:00 PM to 5:00 PM <br>
-            Closing Days  : We are closed on Wednesday's
-        </introduction>
-    </section>
-    <section class="sectionReserve">
-        <div class="divleft">
-            <div class="divReservationDetails">
+            <section>
+                <introduction class="description"><h1>Welcome to Jitendra's restaurant</h1> <br>
+                    Open Hours : 11:00 AM to 3:00 PM and 5:00 PM to 11:00PM <br>
+                    Closing Hours : 2:00 PM to 5:00 PM <br>
+                    Closing Days : We are closed on Wednesday's
+                </introduction>
+            </section>
+            <section class="sectionReserve">
+                <div class="divleft">
+                    <div class="divReservationDetails">
             <span class="TableReservationDetails">
                 <select>
                     <option value="1">1 Person</option>
@@ -65,75 +65,78 @@
                 </select>
             </span>
             <span class="TableReservationDetails">
-                <input type="date" />
+                <input type="date"/>
             </span>
             <span class="TableReservationDetails">
-                <input type="time" />
+                <input type="time"/>
             </span>
-            </div>
-            <div class="divCreateReservation">
-                <a data-toggle="tab" href="#createReservation" class="button" onclick="onReserveClick()">Find a table</a>
-            </div>
-        </div>
-        <div class="divright">
-            <div class="divEditReservationDetails">
+                    </div>
+                    <div class="divCreateReservation">
+                        <a data-toggle="tab" href="#createReservation" class="button" onclick="onReserveClick()">Find a
+                            table</a>
+                    </div>
+                </div>
+                <div class="divright">
+                    <div class="divEditReservationDetails">
             <span class="EditReservationDetails">
                 <label for="Confirmation Code">Confirmation Code</label>
             </span>
             <span class="EditReservationDetails" id="Confirmation Code">
                 <input type="text"/>
             </span>
-            </div>
-            <div class="divEditReservation">
-                <a data-toggle="tab" href="#editReservation" class="button" onclick="onEditReservationClick()">Edit Reservation</a>
-            </div>
+                    </div>
+                    <div class="divEditReservation">
+                        <a data-toggle="tab" href="#editReservation" class="button" onclick="onEditReservationClick()">Edit
+                            Reservation</a>
+                    </div>
 
+                </div>
+            </section>
         </div>
-    </section>
-   </div>
-    <!-- end of home page content -->
+        <!-- end of home page content -->
 
         <!-- start of Create Reservation content -->
-        <div id="createReservation"  class="tab-pane fade">
-        <section  class="sectionReservation">
+        <div id="createReservation" class="tab-pane fade">
+            <section class="sectionReservation">
 
-            <h1>Reservation</h1>
-            <div class="divReserve">
+                <h1>Reservation</h1>
+
+                <div class="divReserve">
                 <span class="reserve">
                     <label for="FirstName">FirstName</label>
                 </span>
                 <span class="reserve" id="FirstName">
-                    <input type="text" />
+                    <input type="text"/>
                 </span>
-            </div>
+                </div>
 
-            <div class="divReserve">
+                <div class="divReserve">
                 <span class="reserve">
                     <label for="LastName">LastName</label>
                 </span>
                 <span class="reserve" id="LastName">
-                    <input type="text" />
+                    <input type="text"/>
                 </span>
-            </div>
+                </div>
 
 
-            <div class="divReserve">
+                <div class="divReserve">
                 <span class="reserve">
                     <label for="Telephone">Telephone</label>
                 </span>
                 <span class="reserve" id="Telephone">
-                    <input type="tel" />
+                    <input type="tel"/>
                 </span>
-            </div>
-
-
-            <div class="divReserve">
-                <div class="reserve">
-                    <input type="button" value="Reserve" />
                 </div>
-            </div>
-        </section>
-       </div>
+
+
+                <div class="divReserve">
+                    <div class="reserve">
+                        <input type="button" value="Reserve" class="button"/>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <!-- end of Create Reservation Content -->
 
@@ -142,6 +145,7 @@
 
             <section class="sectionReservation">
                 <h1>Edit</h1>
+
                 <div class="divEdit">
                     <span class="reserve">
                         <select>
@@ -156,30 +160,71 @@
                         </select>
                     </span>
                     <span class="reserve">
-                        <input type="date" />
+                        <input type="date"/>
                     </span>
                     <span class="reserve">
-                        <input type="time" />
+                        <input type="time"/>
                     </span>
                     <span class="reserve">
-                        <input type="tel" placeholder="(999)-999-9999" />
+                        <input type="tel" placeholder="(999)-999-9999"/>
                     </span>
                 </div>
                 <div>
-                    <input type="button" value="Update Reservation" />
+                    <input type="button" value="Update Reservation" class="button"/>
                 </div>
             </section>
 
-            <section  class="sectionReservation">
+            <section class="sectionReservation">
                 <h1>Cancel Reservation</h1>
-                <p>If you want to canel the reservation, please click cancel below. Once canceled, the reservation cannot be undone.</p>
+
+                <p>If you want to canel the reservation, please click cancel below. Once canceled, the reservation
+                    cannot be undone.</p>
+
                 <div>
-                    <input type="button" value="Cancel Reservation" />
+                    <input type="button" value="Cancel Reservation" class="button"/>
                 </div>
             </section>
 
         </div>
         <!-- end of Edit Reservation Content -->
+
+        <!-- start of Login Content -->
+        <div id="login" class="tab-pane fade">
+            <section class="sectionLogin">
+                <h1>Login</h1>
+    <span>
+    <div>
+        <div class="login">
+            <label for="Username">Username</label>
+        </div>
+        <div class="login" id="Username">
+            <input type="text"/>
+        </div>
+    </div>
+
+    <div>
+        <div class="login">
+            <label for="Password">Password</label>
+        </div>
+        <div class="login" id="Password">
+            <input type="password"/>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="login">
+            <input type="button" value="Login" class="button"/>
+        </div>
+        <div class="login">
+            <input type="button" value="Forgot Password" class="button"/>
+        </div>
+    </div>
+    </span>
+            </section>
+
+        </div>
+        <!-- end of Login Content -->
     </div>
     <div class="push"></div>
 </div>
