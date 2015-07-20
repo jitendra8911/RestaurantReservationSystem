@@ -22,7 +22,7 @@
         <div class="divNav">
             <ul class="nav navbar-nav">
                 <li id="liHome" class="active">  <a data-toggle="tab" href="#home" class="menu">Home</a> </li>
-          <li>  <a data-toggle="tab" href="#viewReservation" class="menu">View Reservation</a> </li>
+          <li id="idViewReservation">  <a data-toggle="tab" href="#viewReservation" class="menu">View Reservation</a> </li>
           <li>  <a data-toggle="tab" href="#viewSeatingArea" class="menu">View Seating Area</a> </li>
           <li> <a data-toggle="tab" href="#profile" class="menu">Profile</a> </li>
            <li><a data-toggle="tab" href="#settings" class="menu">Settings</a></li>
@@ -198,35 +198,35 @@
                         <td>Jitendra Malakalapalli</td>
                         <td>3</td>
                         <td>3</td>
-                        <td>  <input type="button" value="View" class="button"/> </td>
+                        <td> <a data-toggle="tab" href="#changeAssignTable" class="button" onclick="onViewReservationClick()">View</a></td>
                     </tr>
                     <tr>
                         <td>A152</td>
                         <td>Jitendra Malakalapalli</td>
                         <td>6</td>
                         <td>8</td>
-                        <td> <input type="button" value="View" class="button"/> </td>
+                        <td> <a data-toggle="tab" href="#changeAssignTable" class="button" onclick="onViewReservationClick()">View</a></td>
                     </tr>
                     <tr>
                         <td>A252</td>
                         <td>Jitendra Malakalapalli</td>
                         <td>10</td>
                         <td>10</td>
-                        <td> <input type="button" value="View" class="button"/> </td>
+                        <td> <a data-toggle="tab" href="#changeAssignTable" class="button" onclick="onViewReservationClick()">View</a></td>
                     </tr>
                     <tr>
                         <td>E216</td>
                         <td>Jitendra Malakalapalli</td>
                         <td>12</td>
                         <td>12</td>
-                        <td>  <input type="button" value="View" class="button"/> </td>
+                        <td> <a data-toggle="tab" href="#changeAssignTable" class="button" onclick="onViewReservationClick()">View</a></td>
                     </tr>
                     <tr>
                         <td>A153</td>
                         <td>Jitendra Malakalapalli</td>
                         <td>2</td>
                         <td>2</td>
-                        <td> <input type="button" value="View" class="button"> </td>
+                        <td> <a data-toggle="tab" href="#changeAssignTable" class="button" onclick="onViewReservationClick()">View</a></td>
                     </tr>
                 </table>
 
@@ -456,6 +456,30 @@
 
 
         <!-- End of View Contacts Content -->
+
+
+        <!-- start of assign/change table content -->
+        <div id="changeAssignTable"  class="tab-pane fade">
+        <section class="sectionChangeAssignTable">
+            <h1>Confirmation Number: A123</h1>
+
+            <table class="tblChangeAssignTable tblGeneral" align="center">
+                <thead>
+                <tr>
+                    <th>Table#</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>  <input type="button" value="Assign/Change Table" class="button"/> </td>
+                </tr>
+            </table>
+        </section>
+
+        </div>
+
+        <!-- end of assign/change table content -->
     </div>
     <div class="push"></div>
 </div>

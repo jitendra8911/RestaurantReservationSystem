@@ -11,3 +11,12 @@ What are functionalites provided to owner?
 
 In the onwnerHome.html, a owner can create reservation, update reservation, view reservations, view contact list, view seating area, change profile and settings, change table, assign table among a few. If time permits, then I will also add few more functionalities to this project.
 
+
+<!-- start of update -->
+Just an update as on 7/20/2015:
+
+Change/Assign table UI has been added. It can be reached/browsed as follows.  ownerHome.html--->View Reservation --> Click on any "view button"
+
+All the UI has been implemented, but the functionalities are yet to be implemented.
+
+<!-- end of update -->

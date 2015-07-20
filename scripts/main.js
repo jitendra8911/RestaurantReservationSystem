@@ -11,3 +11,10 @@ function onEditReservationClick()
 {
     document.getElementById("liHome").className="";
 }
+
+
+
+function onViewReservationClick()
+{
+    document.getElementById("idViewReservation").className="";
+}
