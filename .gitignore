@@ -47,6 +47,7 @@ profileAndSettings.html
 Sample.html
 viewReservation.html
 viewSeatingsArea.html
+ajaxDemo.html
 
 # Some css files
 ######################
@@ -54,3 +55,7 @@ createReservation.css
 editReservation.css
 login.css
 viewReservation.css
+
+# Some javascript files
+######################
+demoTest.js

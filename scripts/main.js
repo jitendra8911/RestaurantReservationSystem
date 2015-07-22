@@ -1,5 +1,5 @@
 /**
- * Created by Gopinath on 7/18/2015.
+ * Created by Jitendra on 7/18/2015.
  */
 
 function onReserveClick()
