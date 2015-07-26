@@ -61,14 +61,16 @@
                 </select>
             </span>
             <span class="TableReservationDetails">
-                <input type="date" class="dateInputField" value="mm/dd/yy" />
+                <input type="date" name="inputDate" class="dateInputField" value="yyyy-mm-dd" />
             </span>
             <span class="TableReservationDetails">
-                <input type="time" value="--:-- AM/PM"/>
+                <input type="time" name="inputTime" value="hh:mm (24hr clock)"/>
             </span>
                     </div>
                     <div class="divCreateReservation">
-                        <a data-toggle="tab" href="#createReservation" class="button" onclick="onReserveClick()">Find a table</a>
+                        <a data-toggle="tab" href="#" class="button">Find a table</a>
+                    </div>
+                    <div class="error-msg">
                     </div>
                 </div>
                 <div class="divright">
@@ -77,13 +79,14 @@
                 <label for="Confirmation Code">Confirmation Code</label>
             </span>
             <span class="EditReservationDetails" id="Confirmation Code">
-                <input type="text" class="textInputField"/>
+                <input type="text" name="confirmationCode" class="textInputField"/>
             </span>
                     </div>
                     <div class="divEditReservation">
-                        <a data-toggle="tab" href="#editReservation" class="button" onclick="onEditReservationClick()">Edit Reservation</a>
+                        <a data-toggle="tab" href="#" class="button" >Edit Reservation</a>
                     </div>
-
+                    <div class="error-msg">
+                    </div>
                 </div>
             </section>
         </div>
@@ -99,8 +102,10 @@
                     <label for="FirstName">FirstName</label>
                 </span>
                 <span class="createReservationFields" id="FirstName">
-                    <input type="text" />
+                    <input name="FirstName" type="text" />
                 </span>
+                    <div class="error-msg">
+                    </div>
                 </div>
 
                 <div class="divReserve">
@@ -108,8 +113,10 @@
                     <label for="LastName">LastName</label>
                 </span>
                 <span class="createReservationFields" id="LastName">
-                    <input type="text" />
+                    <input name="LastName" type="text" />
                 </span>
+                    <div class="error-msg">
+                    </div>
                 </div>
 
 
@@ -118,8 +125,10 @@
                     <label for="Telephone">Telephone</label>
                 </span>
                 <span class="createReservationFields" id="Telephone">
-                    <input type="tel"   placeholder="(999)-999-9999"/>
+                    <input type="tel"  name="Telephone" placeholder="999-999-9999"/>
                 </span>
+                    <div class="error-msg">
+                    </div>
                 </div>
 
 
@@ -152,17 +161,19 @@
                         </select>
                     </span>
                     <span class="editReservationInputFields">
-                        <input type="date" />
+                        <input name="inputDate" type="date" />
                     </span>
                     <span class="editReservationInputFields">
-                        <input type="time" />
+                        <input name="inputTime" type="time" />
                     </span>
                     <span class="editReservationInputFields">
-                        <input type="tel" placeholder="(999)-999-9999" />
+                        <input name="telephone" type="tel" placeholder="999-999-9999" />
                     </span>
                 </div>
                 <div>
-                    <input type="button" value="Update Reservation" class="button" />
+                    <input type="button" value="Update Reservation" id="btnUpdateReservation" class="button" />
+                </div>
+                <div class="error-msg">
                 </div>
             </section>
 
@@ -321,7 +332,7 @@
                         <label for="ProfileTelephone">Telephone</label>
                     </span>
                     <span class="spanProfile" id="ProfileTelephone">
-                        <input type="tel"  placeholder="(999)-999-9999"/>
+                        <input type="tel"  placeholder="999-999-9999"/>
                     </span>
                 </div>
 
@@ -501,7 +512,8 @@
 <!-- end of browser support -->
 <script src="scripts/jquery.min.js"></script>
 <script src="scripts/bootstrap.min.js"></script>
-<script src="scripts/main.js"></script>
+<script src="scripts/common.js"></script>
+<script src="scripts/ownerHome.js"></script>
 <!-- end of script tags -->
 
 

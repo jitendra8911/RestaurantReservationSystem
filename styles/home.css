@@ -214,6 +214,23 @@ a.button {
     text-align: center;
 }
 
+/* for input validations */
+
+/* login validations */
+.error-msg
+{
+    text-align:center;
+    color:#dd4b39;
+    margin:.5em 0;
+    display:none;
+}
+
+/* end of login validations */
+
+
+
+/* end of input validations */
+
 /* media queries */
 
 

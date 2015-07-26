@@ -29,3 +29,16 @@ Adding "assign table" and "change table" UI's
     }
 
 }
+
+7/25/2015: 10:25 AM update
+
+Added validations to Login content on home.html page as on 7/24/2015.
+Today changes :  a) Changed main.js name to common.js to include functionalities of both home.html and ownerHome.html
+b) Created seperate js files for home.html and ownerHome.html which are home.js and ownerHome.js respectively.
+c) Moved onViewReservationClick from main.js (name originally, now it is common.js) to home.js. Left onReserveClick and onEditReservationClick on the same js file main.js which is now called common.js
+d) Making sure everything is in IIFE in all the js files.
+
+
+7/26/2015 : 7:39 PM update
+
+Validations for home.html page is completed. Yet to implement validations for ownerHome.html page (only for settings and profile) .
