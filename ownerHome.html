@@ -314,8 +314,10 @@
                         <label for="ProfileFirstName">FirstName</label>
                     </span>
                     <span class="spanProfile" id="ProfileFirstName">
-                        <input type="text" />
+                        <input name="profileFirstName" type="text" />
                     </span>
+                    <div class="error-msg">
+                    </div>
                 </div>
 
                 <div class="divProfile">
@@ -323,8 +325,10 @@
                         <label for="ProfileLastName">LastName</label>
                     </span>
                     <span class="spanProfile" id="ProfileLastName">
-                        <input type="text" />
+                        <input name="profileLastName" type="text" />
                     </span>
+                    <div class="error-msg">
+                    </div>
                 </div>
 
                 <div class="divProfile">
@@ -332,8 +336,10 @@
                         <label for="ProfileTelephone">Telephone</label>
                     </span>
                     <span class="spanProfile" id="ProfileTelephone">
-                        <input type="tel"  placeholder="999-999-9999"/>
+                        <input type="tel" name="profileTelephone" placeholder="999-999-9999"/>
                     </span>
+                    <div class="error-msg">
+                    </div>
                 </div>
 
                 <div class="divProfile">
@@ -341,8 +347,10 @@
                         <label for="ProfileEmail">Email</label>
                     </span>
                     <span class="spanProfile" id="ProfileEmail">
-                        <input type="email" placeholder="example@domain.com" />
+                        <input type="email" name="profileEmail" placeholder="example@domain.com" />
                     </span>
+                    <div class="error-msg">
+                    </div>
                 </div>
 
 
@@ -371,7 +379,7 @@
                 </tr>
                 <tr>
                     <td> <label for="restaurantOpenTimings">Restaurant Open Timings</label></td>
-                    <td> <input type="time" id="restaurantOpenTimings"/></td>
+                    <td> <input type="time"  id="restaurantOpenTimings"/></td>
                 </tr>
                 <tr>
                     <td> <label for="restaurantCloseTimings">Restaurant Closing Timings</label></td>
@@ -380,28 +388,30 @@
                 <tr>
                     <td> <label>Restaurant Open Days</label> </td>
                     <td>
-                    <input type="checkbox" name="day" value="Sunday">Sunday
-                    <input type="checkbox" name="day" value="Monday" checked>Monday
-                    <input type="checkbox" name="day" value="Tuesday">Tuesday
-                    <input type="checkbox" name="day" value="Wednesday" >Wednesday
-                    <input type="checkbox" name="day" value="Thursday">Thursday
-                    <input type="checkbox" name="day" value="Friday" >Friday
-                    <input type="checkbox" name="day" value="Saturday">Saturday
+                    <input type="checkbox" name="Opendays" value="Sunday">Sunday
+                    <input type="checkbox" name="Opendays" value="Monday" checked>Monday
+                    <input type="checkbox" name="Opendays" value="Tuesday">Tuesday
+                    <input type="checkbox" name="Opendays" value="Wednesday" >Wednesday
+                    <input type="checkbox" name="Opendays" value="Thursday">Thursday
+                    <input type="checkbox" name="Opendays" value="Friday" >Friday
+                    <input type="checkbox" name="Opendays" value="Saturday">Saturday
                     </td>
                 </tr>
                 <tr>
                     <td> <label>Restaurant Closing Days</label> </td>
-                     <td>   <input type="checkbox" name="day" value="Sunday" checked>Sunday
-                        <input type="checkbox" name="day" value="Monday" >Monday
-                        <input type="checkbox" name="day" value="Tuesday">Tuesday
-                        <input type="checkbox" name="day" value="Wednesday" >Wednesday
-                        <input type="checkbox" name="day" value="Thursday">Thursday
-                        <input type="checkbox" name="day" value="Friday" >Friday
-                        <input type="checkbox" name="day" value="Saturday">Saturday
+                     <td>   <input type="checkbox" name="Closingdays" value="Sunday" checked>Sunday
+                        <input type="checkbox" name="Closingdays" value="Monday" >Monday
+                        <input type="checkbox" name="Closingdays" value="Tuesday">Tuesday
+                        <input type="checkbox" name="Closingdays" value="Wednesday" >Wednesday
+                        <input type="checkbox" name="Closingdays" value="Thursday">Thursday
+                        <input type="checkbox" name="Closingdays" value="Friday" >Friday
+                        <input type="checkbox" name="Closingdays" value="Saturday">Saturday
                     </td>
                 </tr>
             </table>
             <div class="divCenter"><input type="button" class="button" value="Update"/> </div>
+            <div class="error-msg">
+            </div>
         </section>
 
         </div>
