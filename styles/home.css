@@ -27,6 +27,13 @@ html, body {
     height: 55px; /* .push must be the same height as .footer */
 }
 
+.divFooter
+{
+    text-align:center;
+
+}
+
+
 /* end of footer design */
 
 /* for navigation menu */
@@ -82,7 +89,6 @@ html, body {
 
 .divHeader
 {
-    position:static;
     text-align: center;
     font-weight: 700;
     font-size: 2em;
@@ -166,10 +172,6 @@ a.button {
 }
 
 
-.divleft,.divright {
-    float: left;
-    width: 50%
-}
 .divReserve:after,.divProfile:after
 {
     content:".";
@@ -190,11 +192,6 @@ a.button {
     padding:5px;
 }
 
-.divFooter
-{
-    text-align:center;
-
-}
 
 .button
 {
@@ -250,13 +247,6 @@ a.button {
     {
         display: block;
     }
-    .divleft,.divright
-    {
-        border: 1px solid black;
-        margin:2px;
-        width:46%;
-        box-sizing: border-box;
-    }
     .dateInputField
     {
        width:100%;
@@ -293,13 +283,6 @@ a.button {
     .TableReservationDetails,.EditReservationDetails
     {
         display: inline-block;
-    }
-    .divleft,.divright
-    {
-        float:left;
-        width:50%;
-        border: none;
-        margin:inherit ;
     }
 
     /* end of home page quick links stylings */

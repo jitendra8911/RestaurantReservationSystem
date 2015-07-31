@@ -46,3 +46,10 @@ Validations for home.html page is completed. Yet to implement validations for ow
 11:12 PM update
 
 Completed validations for ownerHome.html.
+
+
+7/21/2015
+
+Update on the feedback recieved for Module 1
+1) Removed divleft and divright classes and instead achieved the same styling using bootstrap
+ 2) removed static from divheader class, since by default the position is static
